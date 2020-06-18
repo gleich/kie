@@ -1,5 +1,4 @@
 // Used this to REPLACE the vars.jsonnet file in https://github.com/carlosedp/cluster-monitoring
-// Make sure to fill in the MASTERIP and NODE1IP
 {
   _config+:: {
     namespace: 'monitoring',
@@ -41,11 +40,11 @@
 
   k3s: {
     enabled: true,
-    master_ip: ['MASTERIP'],
+    master_ip: ['###MASTERIP###'],
   },
 
   // Domain suffix for the ingresses
-  suffixDomain: 'NODE1IP.nip.io',
+  suffixDomain: '###NODE1IP###.nip.io',
   // If TLSingress is true, a self-signed HTTPS ingress with redirect will be created
   TLSingress: true,
   // If UseProvidedCerts is true, provided files will be used on created HTTPS ingresses.
