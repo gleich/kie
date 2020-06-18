@@ -1,4 +1,4 @@
-"""
+'''
 Copyright (c) 2020 Matthew Gleich
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -20,7 +20,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Remove any node ip addresses before uploading the files to github. Also can fill them
 back in to run them again
-"""
+'''
 
 
 import os
